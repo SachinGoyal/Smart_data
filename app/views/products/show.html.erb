@@ -16,7 +16,11 @@
 </p>
 
 <p>
-  <%= image_tag @product.avatar.url %>
+  
+
+<%= image_tag @product.image_url(:thumb) if @product.image? %>
+
+
  
 </p>
 

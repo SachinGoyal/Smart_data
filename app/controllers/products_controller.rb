@@ -9,7 +9,7 @@ class ProductsController < InheritedResources::Base
   private
 
     def product_params
-      params.require(:product).permit(:name, :description, :status ,:avatar)
+      params.require(:product).permit(:name, :description, :status , :image, :remote_image_url)
       #params.require(:product).permit(:avatar)
     end
 end

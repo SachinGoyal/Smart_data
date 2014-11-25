@@ -25,7 +25,11 @@
     <%= f.text_field :status %>
   </div>
   <div>
-    <%= f.file_field :avatar %>
+    <%= f.file_field :image %>
+  </div>
+  <div>
+    <%= f.label :remote_image_url, "or image URL" %><br />
+    <%= f.text_field :remote_image_url %>
   </div>
   <div class="actions">
     <%= f.submit %>
